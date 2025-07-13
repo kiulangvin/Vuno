@@ -1,0 +1,50 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #4096ff;
+  --secondary-color: #6b7280;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+/* 暗色主题 */
+.dark {
+  --bg-color: #111827;
+  --text-color: #f3f4f6;
+  --primary-color: #3b82f6;
+  --secondary-color: #9ca3af;
+  --card-bg: #1f2937;
+  --border-color: #374151;
+}
+
+/* 应用主题变量 */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* 按钮样式 */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
